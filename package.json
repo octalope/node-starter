@@ -1,0 +1,23 @@
+{
+  "name": "scratch",
+  "version": "1.0.2",
+  "description": "starter node project",
+  "scripts": {
+    "lint": "eslint \"**/*.js\"",
+    "test": "npm run test:coverage && npm run lint",
+    "test:coverage": "nyc --reporter=lcov mocha && nyc report",
+    "test:dev": "mocha ./test --watch"
+  },
+  "author": "steve.c.brooks@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:sbrooks/scratch.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^8.1.0",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0"
+  }
+}
