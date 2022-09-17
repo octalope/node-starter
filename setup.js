@@ -1,6 +1,6 @@
-const fs = require('fs');
+import fs from 'fs';
 
-var packageJson = require('./package.json');
+import packageJson from './package.json';
 
 packageJson.name = process.argv[2];
 packageJson.version = '1.0.0';
