@@ -1,5 +1,7 @@
 # Scratch
 
+![master](https://github.com/octalope/node-starter/actions/workflows/node.js.yml/badge.svg)
+
 Tiny nodejs starter command-line project.
 
 Run all tests, coverage, and lint.
