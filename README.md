@@ -2,7 +2,7 @@
 
 ![master](https://github.com/octalope/node-starter/actions/workflows/node.js.yml/badge.svg)
 
-Tiny nodejs starter command-line project.
+Tiny Node.js module starter project.
 
 Run all tests, coverage, and lint.
 
