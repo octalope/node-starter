@@ -1,7 +1,10 @@
-const { expect } = require('chai');
 
-describe('scratch', () => {
+import { expect } from 'chai';
+
+import { Obj } from '../lib/index.js';
+
+describe('#index', () => {
   it('passes a test', () => {
-    expect(true).to.equal(true);
+    expect(Obj).to.deep.equal({});
   });
 });

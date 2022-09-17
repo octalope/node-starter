@@ -5,6 +5,9 @@
     "mocha": true,
     "es2021": true
   },
+  "parserOptions": {
+    "sourceType": "module"
+  },
   "globals": {},
   "rules": {
     "complexity": ["error", 10],
