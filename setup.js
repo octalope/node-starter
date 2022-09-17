@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-import packageJson from './package.json';
+import packageJson from './package.json' assert {type: 'json'};
 
 packageJson.name = process.argv[2];
 packageJson.version = '1.0.0';
