@@ -1,14 +1,14 @@
 {
-  "extends": "eslint:recommended",
-  "env": {
-    "node": true,
-    "mocha": true,
-    "es2021": true
-  },
-  "parserOptions": {
-    "sourceType": "module"
-  },
-  "globals": {},
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "rules": {
     "complexity": ["error", 10],
     "no-bitwise": "error",
@@ -75,12 +75,8 @@
     "no-new-wrappers": "error",
     "no-invalid-this": "error",
     "func-names": "off",
-    "no-restricted-syntax": [
-      "error",
-      {
-        "selector": "FunctionExpression",
-        "message": "prefer arrow function"
-      }
+    "prefer-arrow-callback": [
+      "error", { "allowNamedFunctions": true }
     ],
     "no-multi-spaces": "error",
     "one-var": [

@@ -12,7 +12,7 @@
     "build": "node build.js",
     "clean": "rm -rf ./dist/*",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "tslint -p tsconfig.json",
+    "lint": "eslint . --ext .ts",
     "test": "npm run test:coverage && npm run lint",
     "test:coverage": "nyc --reporter=lcov mocha && nyc report",
     "test:dev": "mocha ./test --watch"
@@ -26,6 +26,8 @@
   "devDependencies": {
     "@types/chai": "^4.3.6",
     "@types/mocha": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
     "chai": "^4.3.6",
     "esbuild": "^0.19.2",
     "eslint": "^8.23.1",
