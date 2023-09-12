@@ -1,6 +1,6 @@
-import fs from 'fs';
+const fs = require('fs');
 
-import packageJson from './package.json' assert {type: 'json'};
+const packageJson = require('./package.json');
 
 packageJson.name = process.argv[2];
 packageJson.version = '1.0.0';
